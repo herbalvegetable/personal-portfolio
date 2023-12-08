@@ -14,7 +14,9 @@ export default function PageContainer({ children }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className={styles.page_container}>
-                {children}
+                <div className={styles.middle}>
+                    {children}
+                </div>
             </div>
         </>
     )

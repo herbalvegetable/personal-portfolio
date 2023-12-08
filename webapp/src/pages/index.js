@@ -8,7 +8,6 @@ import Handle from 'components/Handle/Handle';
 export default function Home() {
 	return (
 		<PageContainer>
-			Personal Portfolio
 			<Handle 
 				imgSrc={'/media/pfp01.png'}
 				name={'Ben Aw Yong'}

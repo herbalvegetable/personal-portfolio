@@ -6,4 +6,8 @@ body {
 	font-family: 'Afacad', sans-serif;
 	background-color: #192124;
 	color: #fff;
+
+	text-align: center;
+	margin: 0;
+	padding: 0;
 }
