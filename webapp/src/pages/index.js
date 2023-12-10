@@ -6,6 +6,7 @@ import PageContainer from 'layout/PageContainer/PageContainer';
 import Handle from 'components/Handle/Handle';
 import Paragraph from 'components/Paragraph/Paragraph';
 import Title from 'components/Title/Title';
+import Collage from 'components/Collage/Collage';
 
 export default function Home() {
 	return (
@@ -27,6 +28,14 @@ export default function Home() {
 			</Paragraph>
 
 			<Title>Projects</Title>
+			<Collage collage={[
+				[{src: '/media/SL02.png', caption: 'Poly Capstone Project - Gamified Learning Platform. By Students, For Students.'}],
+				[
+					{src: '/media/webgame01.png', caption: '2D World Generation',},
+					{src: '/media/webgame02.png', caption: 'Connect Four',},
+					{src: '/media/webgame03.png', caption: 'A Game of Chess',},
+				],
+			]}/>
 
 			<Title>Education</Title>
 		</PageContainer>

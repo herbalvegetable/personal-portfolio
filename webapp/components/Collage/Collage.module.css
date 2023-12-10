@@ -1,3 +1,25 @@
 .collage{
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.collage > .box{
+    display: grid;
+}
+.collage > .box.small{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.collage > .box > .collage_img{
+
+}
+.collage > .box > .collage_img .img_container{
+    flex-grow: 1;
+}
+.collage > .box > .collage_img .img_container .img{
+    flex-grow: 1;
+}
+.collage > .box > .collage_img .caption{
+
 }
