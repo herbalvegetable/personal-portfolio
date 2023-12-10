@@ -53,6 +53,15 @@ export default function Home() {
 				]}/>
 
 			<Title>My Skills</Title>
+			<Paragraph>
+				I'm passionate about full-stack web development and am always keeping up with the latest web tech trends. I've also created several personal projects involving front-end technologies such as ReactJS.
+			</Paragraph>
+			<Paragraph>
+				My interest in programming manifested when I was Secondary 3. I taught myself how to code in several languages including JavaScript, Python and C#. Since then, I have embarked on several personal projects, such as web browser games, mobile apps, web scrapers and Discord bots.
+			</Paragraph>
+			<Paragraph>
+				I'm a hardworking, enthusiastic and confident individual. I am always willing to learn and eager to experience new things outside of my comfort zone. I am also resilient and will persevere in the face of adversity.
+			</Paragraph>
 		</PageContainer>
 	)
 }

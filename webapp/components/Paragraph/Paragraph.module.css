@@ -3,4 +3,17 @@
     margin-bottom: 1em;
 
     font-size: 1.1em;
+
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn{
+    0% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
