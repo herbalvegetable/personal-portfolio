@@ -4,14 +4,14 @@
     align-items: flex-start;
     align-self: flex-start;
 
-    margin-bottom: 1em;
+    margin-bottom: 0.8em;
 }
 
 .title{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 0.4em;
+    margin-bottom: 0.8em;
 }
 .title .bullet{
     width: 15px;
