@@ -7,6 +7,7 @@ import Handle from 'components/Handle/Handle';
 import Paragraph from 'components/Paragraph/Paragraph';
 import Title from 'components/Title/Title';
 import Collage from 'components/Collage/Collage';
+import Topic from 'components/Topic/Topic';
 
 export default function Home() {
 	return (
@@ -38,6 +39,18 @@ export default function Home() {
 			]}/>
 
 			<Title>My Educational Background</Title>
+			<Topic 
+				title={'Ngee Ann Polytechnic'}
+				lines={[
+					'Diploma in Cybersecurity & Digital Forensics',
+					'3.71 Cum. GPA',
+					'Assistant Head of Operations of Overflow Club (Programming)'
+				]}/>
+			<Topic 
+				title={'Marist Stella High School'}
+				lines={[
+					'Exco Member of the Digital Media Club (Photography, Videography)',
+				]}/>
 		</PageContainer>
 	)
 }

@@ -15,7 +15,9 @@ export default function Topic({ title, lines }) {
                 <div className={styles.text}>{title}</div>
             </div>
             <div className={styles.content}>
-                <div className={styles.divider}></div>
+                <div className={styles.divider}>
+                    <div className={styles.line}></div>
+                </div>
                 <div className={styles.lines_container}>
                     {
                         lines.map((line, i) => {
