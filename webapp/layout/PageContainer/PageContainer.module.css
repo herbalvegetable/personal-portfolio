@@ -7,10 +7,17 @@
     width: 100vw;
 }
 
+.page_container .sidebar_container{
+    position: relative;
+    width: 125px;
+    
+    margin-right: 1em;
+}
+
 .page_container .sidebar{
+    position: fixed;
     width: 125px;
     padding-top: 1em;
-    margin-right: 1em;
 
     user-select: none;
 }

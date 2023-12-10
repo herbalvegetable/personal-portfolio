@@ -12,22 +12,22 @@ export default function Home() {
 	return (
 		<PageContainer>
 			<Handle
-				imgSrc={'/media/pfp01.png'}
+				imgSrc={'/media/pfp03.png'}
 				name={'Ben Aw Yong'}
 				desc={'Developer, Creator'} />
+			<Title>Hi, I'm Ben.</Title>
 
-			<Title>About Me.</Title>
 			<Paragraph>
-				I am passionate about fullstack web development and am always keeping up with the latest web tech trends. I have also created several personal projects involving front-end technologies such as ReactJS.
+				I'm passionate about fullstack web development and am always keeping up with the latest web tech trends. I have also created several personal projects involving front-end technologies such as ReactJS.
 			</Paragraph>
 			<Paragraph>
-				I got interested in programming in Secondary 3 and taught myself how to code in JavaScript, Python and C#. Since then, I have embarked on several personal projects, such as web browser games, mobile apps, web scrapers and Discord bots.
+				My interest in programming manifested when I was Secondary 3. I taught myself how to code in several languages including JavaScript, Python and C#. Since then, I have embarked on several personal projects, such as web browser games, mobile apps, web scrapers and Discord bots.
 			</Paragraph>
 			<Paragraph>
-				I am a hardworking, enthusiastic and confident individual. I am always willing to learn and eager to experience new things outside of my comfort zone. I am also resilient and will persevere in the face of adversity.
+				I'm a hardworking, enthusiastic and confident individual. I am always willing to learn and eager to experience new things outside of my comfort zone. I am also resilient and will persevere in the face of adversity.
 			</Paragraph>
 
-			<Title>Projects</Title>
+			<Title>My Projects</Title>
 			<Collage collage={[
 				[{src: '/media/SL02.png', caption: 'Poly Capstone Project - Gamified Learning Platform. By Students, For Students.'}],
 				[
@@ -37,7 +37,7 @@ export default function Home() {
 				],
 			]}/>
 
-			<Title>Education</Title>
+			<Title>My Educational Background</Title>
 		</PageContainer>
 	)
 }

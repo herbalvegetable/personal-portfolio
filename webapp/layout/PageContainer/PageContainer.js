@@ -31,29 +31,28 @@ export default function PageContainer({ children }) {
             </Head>
             <div className={styles.page_container}>
 
-                <div className={styles.sidebar}>
-                    <div className={styles.page_links}>
-                        {
-                            pageLinks.map((link, i) => {
-                                const { href, title } = link;
+                <div className={styles.sidebar_container}>
+                    <div className={styles.sidebar}>
+                        <div className={styles.page_links}>
+                            {
+                                pageLinks.map((link, i) => {
+                                    const { href, title } = link;
 
 
-                                return (
-                                    <div
-                                        className={styles.link}
-                                        onClick={e => router.push(href)}>
-                                        <div className={`
-                                            ${styles.active_container}
-                                            ${router.pathname === href ? styles.active : ''}
-                                        `}>
-                                            {title}
+                                    return (
+                                        <div
+                                            className={styles.link}
+                                            onClick={e => router.push(href)}>
+                                            <div className={`${styles.active_container} ${router.pathname === href ? styles.active : ''}`}>
+                                                {title}
+                                            </div>
                                         </div>
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
+                                    )
+                                })
+                            }
+                        </div>
 
+                    </div>
                 </div>
 
                 <div className={styles.middle}>

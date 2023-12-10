@@ -10,8 +10,8 @@ function CollageImage({ src, caption }) {
             <div className={styles.img_container}>
                 <Image
                     className={styles.img}
-                    width={100}
-                    height={100}
+                    width={850}
+                    height={850}
                     src={src} 
                     alt={caption}/>
             </div>
