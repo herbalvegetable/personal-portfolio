@@ -11,7 +11,7 @@
     position: relative;
     width: 125px;
     
-    margin-right: 1em;
+    margin-right: 3.5em;
 }
 
 .page_container .sidebar{
@@ -33,10 +33,10 @@
     cursor: pointer;
 }
 .page_container .sidebar .page_links > .link .active_container{
-    padding-left: 0.5em;
-    /* padding-top: 0.1em;
-    padding-bottom: 0.1em; */
-    border-radius: 15px;
+    padding-left: 0.8em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    border-radius: 50px;
 }
 .page_container .sidebar .page_links > .link .active_container.active{
     background-color: #96C3C5;

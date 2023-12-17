@@ -1,13 +1,26 @@
 .title{
     align-self: flex-start;
-    margin-top: 0.5em;
-    margin-bottom: 1.2em;
+    /* margin-top: 0.5em;
+    margin-bottom: 1.2em; */
+    font-size: 1.75em;
+    margin-bottom: 0.25em;
+}
+
+.title.one{
+    font-size: 1.75em;
+}
+.title.two{
+    font-size: 1.5em;
+}
+.title.three{
+    font-size: 1.2em;
 }
 
 .title .text{
-    font-size: 1.5em;
-    padding: 0 2px;
     padding-bottom: 3px;
+}
+.title .text.small_spacing{
+    padding: 0 2px;
 }
 
 .title .underline{
