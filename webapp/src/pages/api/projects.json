@@ -1,0 +1,28 @@
+{
+    "projects": [
+        {
+            "title": "Super-Learn",
+            "caption": "Poly Capstone Project - Gamified Learning Platform. By Students, For Students.",
+            "desc": "Gamified Learning Platform designed to make learning fun for polytechnic students.\nInspired by learning management systems such as Blackboard, MeL, and Brightspace.",
+            "imgSrc": "/media/SL02.png"
+        },
+        {
+            "title": "2D Minecraft Clone",
+            "caption": "2D Minecraft Clone",
+            "desc": "Procedurally generated 2D world, in which the player can traverse and explore.",
+            "imgSrc": "/media/webgame01.png"
+        },
+        {
+            "title": "Connect Four",
+            "caption": "Connect Four",
+            "desc": "Connect Four Game that everyone knows and loves.",
+            "imgSrc": "/media/webgame02.png"
+        },
+        {
+            "title": "Chess",
+            "caption": "Game of Chess",
+            "desc": "Chess.",
+            "imgSrc": "/media/webgame03.png"
+        }
+    ]
+}

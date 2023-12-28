@@ -41,6 +41,7 @@ export default function PageContainer({ children }) {
 
                                     return (
                                         <div
+                                            key={i.toString()}
                                             className={styles.link}
                                             onClick={e => router.push(href)}>
                                             <div className={`${styles.active_container} ${router.pathname === href ? styles.active : ''}`}>
@@ -58,6 +59,9 @@ export default function PageContainer({ children }) {
                 <div className={styles.middle}>
                     {children}
                 </div>
+            </div>
+            <div className={styles.footer}>
+                Ben Aw Yong © {new Date().getFullYear()}
             </div>
         </>
     )

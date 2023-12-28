@@ -1,0 +1,47 @@
+.projects{
+
+}
+
+.project{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2em;
+}
+
+.project .img_container{
+    max-width: 200px;
+    max-height: 200px;
+    margin-right: 1em;
+}
+.project .img_container .img{
+    object-fit: cover;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+.project .content{
+    display: flex;
+    flex-direction: column;
+}
+.project .content .title{   
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    text-align: left;
+    flex-grow: 1;
+
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+.project .content .desc{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    text-align: left;
+    flex-grow: 1;
+    font-size: 1.1em;
+}

@@ -10,7 +10,23 @@ import Collage from 'components/Collage/Collage';
 import Topic from 'components/Topic/Topic';
 import List from 'components/List/List';
 
+import projectsData from './api/projects.json';
+
 export default function Home() {
+	const [collage, setCollage] = useState([]);
+
+	useEffect(() => {
+		console.log(projectsData);
+
+		// show first 4 projects
+		let collageList = projectsData.projects.slice(0, 4).map(proj => {
+			let { imgSrc: src, caption } = proj;
+			return [{ src, caption }];
+		});
+
+		setCollage(collageList);
+	}, []);
+
 	return (
 		<PageContainer>
 			<Handle
@@ -18,7 +34,7 @@ export default function Home() {
 				name={'Ben Aw Yong'}
 				desc={'Developer, Creator'} />
 			<Title>Hi, I'm Ben.</Title>
-			<br/>
+			<br />
 
 			<Paragraph>
 				I'm passionate about full-stack web development and am always keeping up with the latest web tech trends. I've also created several personal projects involving front-end technologies such as ReactJS.
@@ -32,64 +48,57 @@ export default function Home() {
 
 			<br />
 
-			<Title>My Projects</Title>
-			<br/>
-			<Collage collage={[
-				[{src: '/media/SL02.png', caption: 'Poly Capstone Project - Gamified Learning Platform. By Students, For Students.'}],
-				[
-					{src: '/media/webgame01.png', caption: '2D World Generation',},
-					{src: '/media/webgame02.png', caption: 'Connect Four',},
-					{src: '/media/webgame03.png', caption: 'A Game of Chess',},
-				],
-			]}/>
+			<Title>My Top Projects</Title>
+			<br />
+			<Collage collage={collage} />
 
 			<br />
 
 			<Title>My Educational Background</Title>
-			<br/>
-			<Topic 
+			<br />
+			<Topic
 				title={'Ngee Ann Polytechnic'}
 				lines={[
 					'Diploma in Cybersecurity & Digital Forensics',
 					'3.71 Cum. GPA',
 					'Assistant Head of Operations of Overflow Club (Programming)'
-				]}/>
-			<Topic 
+				]} />
+			<Topic
 				title={'Marist Stella High School'}
 				lines={[
 					'Exco Member of the Digital Media Club (Photography, Videography)',
-				]}/>
+				]} />
 
 			<br />
 
 			<Title>My Skills</Title>
-			<br/>
+			<br />
 
 			<Title heading={2} has_underline={false}>Technologies</Title>
 			<List listItems={[
-				{title: 'Python', desc: ''},
-				{title: 'HTML5', desc: ''},
-				{title: 'CSS', desc: ''},
-				{title: 'JavaScript', desc: ''},
-				{title: 'NodeJS', desc: ''},
-				{title: 'C#', desc: ''},
-				{title: 'ReactJS', desc: ''},
-				{title: 'React Native', desc: ''},
-			]}/>
+				{ title: 'Python', desc: '' },
+				{ title: 'HTML5', desc: '' },
+				{ title: 'CSS', desc: '' },
+				{ title: 'JavaScript', desc: '' },
+				{ title: 'NodeJS', desc: '' },
+				{ title: 'C#', desc: '' },
+				{ title: 'ReactJS', desc: '' },
+				{ title: 'React Native', desc: '' },
+			]} />
 
-			<br/>
+			<br />
 
 			<Title heading={2} has_underline={false}>Values</Title>
 			<List listItems={[
-				{title: 'Communication', desc: ''},
-				{title: 'Teamwork', desc: ''},
-				{title: 'Open-mindedness', desc: ''},
-				{title: 'Perspective', desc: ''},
-				{title: 'Decisiveness', desc: ''},
-				{title: 'Critical Thinking', desc: ''},
-				{title: 'Decision Making', desc: ''},
-				{title: 'Outspoken', desc: ''},
-			]}/>
+				{ title: 'Communication', desc: '' },
+				{ title: 'Teamwork', desc: '' },
+				{ title: 'Open-mindedness', desc: '' },
+				{ title: 'Perspective', desc: '' },
+				{ title: 'Decisiveness', desc: '' },
+				{ title: 'Critical Thinking', desc: '' },
+				{ title: 'Decision Making', desc: '' },
+				{ title: 'Outspoken', desc: '' },
+			]} />
 
 			<br />
 		</PageContainer>
